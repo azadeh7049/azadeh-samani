@@ -283,6 +283,25 @@ h6 {
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
 }
+.closer {
+  perspective: 1000px; /* Perspective value for simulating 3D effect */
+  text-align: center;
+}
+
+.text {
+  font-size: 20px; /* Initial font size */
+  animation: approach 2s ease-in-out infinite alternate;
+}
+
+@keyframes approach {
+  0% {
+    font-size: 20px; /* Initial font size */
+  }
+  100% {
+    font-size: 40px; /* Increased font size to simulate approach */
+  }
+}
+
 
 @media (min-width: 1024px) {
   #hero {
