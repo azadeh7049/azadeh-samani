@@ -51,6 +51,9 @@ t<!DOCTYPE html>
         <div class="social-links mt-3 text-center">
           
           <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/auzadeh7049/WeCloudData-Projects" target="_blank" class="github"><i
+              class="bx bxl-github"></i></a>
+
         </div>
       </div>
 
@@ -94,20 +97,11 @@ t<!DOCTYPE html>
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                  <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
                 </div>
 
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
+             </div>
           </div>
 
           <div class="col-lg-4">
@@ -120,23 +114,19 @@ t<!DOCTYPE html>
                
               </ul>
             </div>
-            <div class="portfolio-description">
-              <h2>This is project1</h2>
-              <p>In this project an AWS cloud infrastructure is deployed using the AWS CLI command line tool in bash shell scripts.The AWS cloud environment will have a VPC, internet gateway, public subnet, public route table, and EC2 instances. 
-                              </p>
-            </div>
-          </div>
+         </div>
 
         </div>
 
         <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
+            <div class="portfolio-description">
+              <h2>Project1</h2>
+              <p>In this project an AWS cloud infrastructure is deployed using the AWS CLI command line tool in bash shell scripts.The AWS cloud environment will have a VPC, internet gateway, public subnet, public route table, and EC2 instances. 
+                              </p>
               <ul>
                 <li><strong>Category</strong>: AWS/Automation tools</li>
                 <li><strong>Script</strong>: Terraform & Ansible</li>                
-                <li><strong>Project date</strong>: 20 September, 2023</li>
-               
+                              
               </ul>
             </div>
             <div class="portfolio-description">
@@ -156,14 +146,12 @@ t<!DOCTYPE html>
               <h3>Web App Deployment on AWS Using Docker</h3>
               <p>This project a simple web app will be deployed as a Docker container on the AWS cloud, allowing users to access the app via the public internet.</p>
               
-              <li>Create an AWS VPC. Create an internet gateway and associate it to the VPC.</li>
-              <li>Create one private subnet and one public subnet in the VPC.</li>
-              <li>Create a public route table routing 0.0.0.0/0 to the internet gateway.</li>
-              <li>Create security groups for the subnets.</li>
-              <li>Database server.</li>
-              <li>API server.</li>
-              <li>Autoscaling group.</li>
-              <li>Application load balancer.</li>
+              <li>Create a Web App: A simple web app should be created or leverage an existing one, such as those available on GitHub.</li>
+              <li>Dockerize the App: Dockerize the web app by creating a Dockerfile with instructions to build a Docker image for the app.</li>
+              <li>Create a DockerHub Account: If not already done, create a DockerHub account to host the Docker image.</li>
+              <li>Build and Push Docker Image: Build the Docker image in both x86_64 and arm64 formats using Docker Buildx tool, and push the images to DockerHub registry.</li>
+              <li>Deploy the App on AWS: Deploy the app container on AWS by creating and launching an EC2 instance to serve as the container server.</li>
+              <li>Install Docker Engine:</li>
 
             </div>
           </div>
