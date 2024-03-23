@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  auth-api:
+    build:
+      context: ./auth_api
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
+
+  catalog-api:
+    build:
+      context: ./catalog_api
+      dockerfile: Dockerfile
+    ports:
+      - 5001:5000
