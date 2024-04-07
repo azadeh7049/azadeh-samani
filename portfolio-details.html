@@ -97,7 +97,7 @@
 
           <div class="col-lg-8">
             <div class="align-items-center">
-              <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
+              <image src="assets/img/portfolio/portfolio-1.jpg" className="object-cover" alt="">
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@
         <div class="col-lg-12">
           <div class="portfolio-description">
             <ul>
-              <h2>Project1</h2>
+              <h2>Project 1: Linux Servers on AWS</h2>
               <p>In this project an AWS cloud infrastructure is deployed using the AWS CLI command line tool in bash
                 shell
                 scripts.The AWS cloud environment will have a VPC, internet gateway, public subnet, public route table,
@@ -119,17 +119,21 @@
             </ul>
           </div>
         </div>
+        <br>
+        <p>
+          ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
         <div class="row gy-4">
           <div class="col-lg-8">
             <div class="align-items-center">
-              <img src="assets/img/portfolio/portfolio-2.jpg" alt="">
+              <image src="assets/img/portfolio/portfolio-2.jpg" className="object-cover" alt="">
             </div>
           </div>
         </div>
         <div class="col-lg-8">
           <div class="portfolio-description">
             <ul>
-              <h2>Project2</h2>
+              <h2>Project 2: Infrastructure Provisioning Automation</h2>
               <p>Set up a multi-tiered application infrastructure architecture using Terraform and ansible.</p>
               <li>Create an AWS VPC. Create an internet gateway and associate it to the VPC.</li>
               <li>Create one private subnet and one public subnet in the VPC.</li>
@@ -142,18 +146,22 @@
             </ul>
           </div>
         </div>
+        <br>
+        <p>
+          ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
         <div class="row gy-4">
-          <div class="col-lg-8">
-            <div class="align-items-center">
-              <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
-            </div>
+
+          <div class="align-items-center">
+            <image src="assets/img/portfolio/portfolio-3.jpg" layout="fill" className="object-cover" alt="">
           </div>
+
         </div>
         <div class="col-lg-12">
           <div class="portfolio-description">
             <ul>
-              <h2>Project3</h2>
-              <h3>Web App Deployment on AWS Using Docker</h3>
+              <h2>Project 3: Web App Deployment on AWS Using Docker</h2>
+
               <p>This project a simple web app will be deployed as a Docker container on the AWS cloud, allowing users
                 to
                 access the app via the public internet.</p>
@@ -174,6 +182,10 @@
           </div>
         </div>
 
+        <br>
+        <p>
+          ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
         <div class="row gy-4">
           <div class="col-lg-8">
             <div class="align-items-center">
@@ -181,11 +193,12 @@
             </div>
           </div>
         </div>
+
         <div class="col-lg-12">
           <div class="portfolio-description">
             <ul>
-              <h2>Project4</h2>
-              <h3>Multi-Container Web App Deployment Project</h3>
+              <h2>Project 4: Multi-Container Web App Deployment Project</h2>
+
               <p>In this project, students will work in a team to deploy a web app that leverages multiple Docker
                 images. They will orchestrate this multi-container setup using Docker Compose. The web app containers
                 environment will be hosted on the AWS cloud, and users will be able to access the web app via the public
@@ -223,6 +236,11 @@
           </div>
         </div>
       </div>
+
+      <br>
+      <p>
+        ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      </p>
       <div class="row gy-4">
         <div class="col-lg-8">
           <div class="align-items-center">
@@ -233,15 +251,15 @@
       <div class="col-lg-12">
         <div class="portfolio-description">
           <ul>
-            <h2>Project5</h2>
-            <h4>API’s and Databases</h4>
+            <h2>Project 5: API’s and Databases</h2>
+
             <p>In this project, an API microservice connected to a database will be deployed. This API will have exposed
               endpoints that users can send HTTP requests to and get a response. Data will be returned to users as JSON
               payloads. AWS cloud infrastructure will be provisioned using any of AWS CLI, boto3, docker. Specifically,
               the AWS cloud environment will have a VPC, internet gateway,
               public subnet, public route table,
               EC2 instances. These scripts will be stored in GitHub.</p>
-            <h4>Requirements</h4>
+            <h5><b>Requirements</b></h5>
             <b> Database Creation:</b>
             </br>Create a database to store data (e.g., NHL player stats) using a database server (MySQL).
             <b></br>API Server:</b>
@@ -252,15 +270,72 @@
             <b><br>Deployment:</b>
             </br>Deploy the database server and API microservice on AWS cloud, ensuring accessibility on the public
             internet.</b>
-            <h4>Documentation</h4>
-            <b>GitHub Repository:</b>
-            <br>https://github.com/auzadeh7049/WeCloudData-Projects/tree/main
-            <b><br>Architectural Diagrams:</b>
-            <br>Architectural diagram depicting the AWS cloud infrastructure setup
+
 
           </ul>
         </div>
-      </div>
+        <br>
+        <p>
+          ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <div class="align-items-center">
+              <img src="assets/img/portfolio/portfolio-6.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="portfolio-description">
+            <ul>
+              <h2>Project 6: CI/CD</h2>
+
+              <p>A CI/CD pipeline will be deployed with Jenkins with build, test and deploy stages for a web app.
+                The web app is also deployed as a container in a environment - e.g. via Docker, Docker Compose,
+                Kubernetes/AWS EKS, etc. The app will be updated on the developer’s local machine, and these changes to
+                the app
+                will be commited in Git and pushed to the main branch on a remote GitHub repo. This triggers a Jenkins
+                CI pipeline
+                to build the app as a new Docker image, test the new build and push the Docker image to Docker Hub.
+                Finally,
+                the Jenkins pipeline will then deploy the updated app as a container into a the container environment of
+                choice
+                with appropriate Dockerfiles, Docker compose, AWS ECS or Kubernetes manifest and configuration files.
+              </p>
+              <h5><b>Requirements</b></h5>
+              <b> Deploy a Jenkins server on AWS:</b>
+              </br>1. Provision a Jenkins server on AWS using any method you prefer. For e.g. you can use the same
+              method you used in Project 7 infrastructure provisioning automation.
+              </br>2. Ensure you are able to connect to the Jenkins server and log in to the Jenkins dashboard.
+              <b></br>Deploy Container infrastructure:</b>
+              <br>1. Provision a container environment - (Create an AWS EKS cluster to automate the infrastructure
+              provisioning.</b>
+              <br>2. Ensure the container environment is and ready to deploy containerized apps.
+              <b><br>App CI/CD with Jenkins pipeline:</b>
+              </br>1. Create the container and Kubernetes manifest and configuration files with deployment configuration
+              information for your app(s).
+              <br>2. Create a Jenkinsfile containing a Jenkins pipeline with the following stages
+              <li>Source:</li>
+              <p>This stage will execute a Git checkout of your GitHub repo containing your app source code, Dockerfile
+                and Kubernetes manifest configuration files.</p>
+              <li>Build:</li>
+              <p>This stage will build the app’s Docker image locally on the Jenkins server.</p>
+              <li>Test:</li>
+              <p>This stage will execute tests for your app and stop the remaining Jenkins pipeline if the tests fail
+                or move on to the next stages if the tests pass.</p>
+              <li>Push:</li>
+              <p>If the tests pass, this stage will then push the newly built Docker image to your Docker Hub repo.</p>
+              <p></p>
+              <li>Deploy:</li>
+              <p>This stage gets the Jenkins server to deploy the app into the container environment by
+                Docker, Docker compose, AWS EKSc. Using the corresponding Docker and/or Kubernetes manifest files.</p>
+
+
+
+            </ul>
+          </div>
+
+        </div>
       </div>
 
 
