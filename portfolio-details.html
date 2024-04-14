@@ -273,12 +273,11 @@
             <b><br>Deployment:</b>
             </br>Deploy the database server and API microservice on AWS cloud, ensuring accessibility on the public
             internet.</b>
-            <<<<<<< HEAD=======<h5><b>Documentation</b></h4>
+            <h5><b>Documentation</b></h4>
               <b>GitHub Repository:</b>
               <br>https://github.com/auzadeh7049/WeCloudData-Projects/tree/main
               <b><br>Architectural Diagrams:</b>
               <br>Architectural diagram depicting the AWS cloud infrastructure setup
-              >>>>>>> 7dd1f6f4f50a8217a07b4f0571f95104da2cabb7
 
           </ul>
         </div>
@@ -289,7 +288,7 @@
         <div class="row gy-4">
           <div class="col-lg-8">
             <div class="align-items-center">
-              <img src="assets/img/portfolio/portfolio-6.jpg" alt="">
+              <img src="assets/img/portfolio/portfolio-7.jpg" alt="">
             </div>
           </div>
         </div>
@@ -299,8 +298,8 @@
               <h2>Project 6: CI/CD</h2>
 
               <p>A CI/CD pipeline will be deployed with Jenkins with build, test and deploy stages for a web app.
-                The web app is also deployed as a container in a environment - e.g. via Docker, Docker Compose,
-                Kubernetes/AWS EKS, etc. The app will be updated on the developer’s local machine, and these changes to
+                The web app is also deployed as a container in a environment Docker Compose and AWS EKS.
+                The app will be updated on the developer’s local machine, and these changes to
                 the app
                 will be commited in Git and pushed to the main branch on a remote GitHub repo. This triggers a Jenkins
                 CI pipeline
@@ -308,12 +307,11 @@
                 Finally,
                 the Jenkins pipeline will then deploy the updated app as a container into a the container environment of
                 choice
-                with appropriate Dockerfiles, Docker compose, AWS ECS or Kubernetes manifest and configuration files.
+                with appropriate Docker compose, Kubernetes manifest and configuration files.
               </p>
               <h5><b>Requirements</b></h5>
               <b> Deploy a Jenkins server on AWS:</b>
-              </br>1. Provision a Jenkins server on AWS using any method you prefer. For e.g. you can use the same
-              method you used in Project 7 infrastructure provisioning automation.
+              </br>1. Provision a Jenkins server on AWS using any method you prefer.
               </br>2. Ensure you are able to connect to the Jenkins server and log in to the Jenkins dashboard.
               <b></br>Deploy Container infrastructure:</b>
               <br>1. Provision a container environment - (Create an AWS EKS cluster to automate the infrastructure
@@ -344,6 +342,44 @@
           </div>
 
         </div>
+
+
+        <div class="col-lg-12">
+          <div class="portfolio-description">
+            <ul>
+              <h2>Project 7: (Kubernetes)</h2>
+
+              <p>In this project, a web app will be deployed onto a cloud production Kubernetes cluster that can be
+                consumed
+                by users on the public internet. Because this is deployed in a Kubernetes environment the orchestration
+                of
+                the app containers is done using the Kubernetes tech stack. For this specific project AWS's managed
+                Kubernetes
+                service will be leveraged for their cloud production Kubernetes cluster.
+              </p>
+              <h5><b>Requirements</b></h5>
+              <p>1. Create a web app or leverage a web app that is already publicly available on GitHub.</p>
+              <p>2. Dockerize the app.</p>
+              <ul>
+                <p>a. Create Dockerfile with instructions to create the respective Docker image for this app.</p>
+                <p>b. Create a DockerHub account</p>
+                <p>c. Build the Docker images and push the Docker images to your DockerHub registry</p>
+              </ul>
+              <p>3. Deploy and orchestrate the app containers with the AWS managed Kubernetes service AWS EKS.</p>
+              <p>4. Deploy and orchestrate the app containers with the AWS managed Kubernetes service AWS EKS.</p>
+              <ul>
+                <p>a. Launch and run your app containers in the configured AWS EKS Kubernetes cluster(s) and ensure your
+                  app
+                  is accessible by users from the public internet.
+                <p>b. The app should have a valid IP address or DNS endpoint where users can connect to from their
+                  browser.
+                </p>
+              </ul>
+          </div>
+
+        </div>
+
+
       </div>
 
 
